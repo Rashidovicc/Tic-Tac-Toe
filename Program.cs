@@ -4,14 +4,10 @@ namespace TIC_TAC_TOE
 {
     class Program
     {
-        //making array and
-        //by default I am providing 0-9 where no use of zero
         private static readonly char[] Arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
         private static int _player = 1; //By default player 1 is set
 
-        private static int _choice; //This holds the choice at which position user want to mark
-        // The flag variable checks who has won if it's value is 1 then someone has won the match
-        //if -1 then Match has Draw if 0 then match is still running
+        private static int _choice =  0; 
         private static int _flag = 0;
 
         private static void Main(string[] args)
