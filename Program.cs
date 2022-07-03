@@ -5,23 +5,22 @@ namespace TIC_TAC_TOE
     class Program
     {
         private static readonly char[] Arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-        private static int _player = 1; //By default player 1 is set
-
-        private static int _choice =  0; 
+        private static int _player = 1;
+        private static int _choice; 
         private static int _flag = 0;
 
         private static void Main(string[] args)
         {
             do
             {
-                Console.Clear();// whenever loop will be again start then screen will be clear
+                Console.Clear();
                 Console.WriteLine("Player1:X and Player2:O");
                 Console.WriteLine("\n");
                 Console.WriteLine(_player % 2 == 0 ? "Player 2 Chance" : "Player 1 Chance");
                 Console.WriteLine("\n");
-                Board();// calling the board Function
+                Board();
                 _choice = int.Parse(Console.ReadLine()!);//Taking users choice
-                // checking that position where user want to run is marked (with X or O) or not
+                
                 if (Arr[_choice] != 'X' && Arr[_choice] != 'O')
                 {
                     if (_player % 2 == 0) //if chance is of player 2 then mark O else mark X
