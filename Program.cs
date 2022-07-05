@@ -42,7 +42,7 @@ namespace TIC_TAC_TOE
                     Console.WriteLine("Please wait 2 second board is loading again.....");
                     Thread.Sleep(2000);
                 }
-                _flag = CheckWin();// calling of check win
+                _flag = CheckWin();
             }
             while (_flag != 1 && _flag != -1);
            
