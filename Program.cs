@@ -46,9 +46,8 @@ namespace TIC_TAC_TOE
                 _flag = CheckWin();// calling of check win
             }
             while (_flag != 1 && _flag != -1);
-            // This loop will be run until all cell of the grid is not marked
-            //with X and O or some player is not win
-            Console.Clear();// clearing the console
+           
+            Console.Clear();
             Board();// getting filled board again
             if (_flag == 1)
             // if flag value is 1 then someone has win or
