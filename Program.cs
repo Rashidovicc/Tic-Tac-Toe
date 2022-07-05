@@ -19,11 +19,11 @@ namespace TIC_TAC_TOE
                 Console.WriteLine(_player % 2 == 0 ? "Player 2 Chance" : "Player 1 Chance");
                 Console.WriteLine("\n");
                 Board();
-                _choice = int.Parse(Console.ReadLine()!);//Taking users choice
+                _choice = int.Parse(Console.ReadLine()!);
                 
                 if (Arr[_choice] != 'X' && Arr[_choice] != 'O')
                 {
-                    if (_player % 2 == 0) //if chance is of player 2 then mark O else mark X
+                    if (_player % 2 == 0)
                     {
                         Arr[_choice] = 'O';
                         _player++;
@@ -35,8 +35,7 @@ namespace TIC_TAC_TOE
                     }
                 }
                 else
-                //If there is any possition where user want to run
-                //and that is already marked then show message and load board again
+                    
                 {
                     Console.WriteLine("Sorry the row {0} is already marked with {1}", _choice, Arr[_choice]);
                     Console.WriteLine("\n");
