@@ -49,8 +49,7 @@ namespace TIC_TAC_TOE
             Console.Clear();
             Board();// getting filled board again
             if (_flag == 1)
-            // if flag value is 1 then someone has win or
-            //means who played marked last time which has win
+            
             {
                 Console.WriteLine("Player {0} has won", (_player % 2) + 1);
             }
