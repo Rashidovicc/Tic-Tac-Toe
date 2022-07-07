@@ -47,19 +47,19 @@ namespace TIC_TAC_TOE
             while (_flag != 1 && _flag != -1);
            
             Console.Clear();
-            Board();// getting filled board again
+            Board();
             if (_flag == 1)
             
             {
                 Console.WriteLine("Player {0} has won", (_player % 2) + 1);
             }
-            else// if flag value is -1 the match will be draw and no one is winner
+            else
             {
                 Console.WriteLine("Draw");
             }
             Console.ReadLine();
         }
-        // Board method which creats board
+        
         private static void Board()
         {
             Console.WriteLine("     |     |      ");
