@@ -76,7 +76,6 @@ namespace TIC_TAC_TOE
         private static int CheckWin()
         {
             #region Horzontal Winning Condtion
-            //Winning Condition For First Row
             if (Arr[1] == Arr[2] && Arr[2] == Arr[3])
             {
                 return 1;
