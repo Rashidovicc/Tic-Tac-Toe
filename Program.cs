@@ -72,7 +72,6 @@ namespace TIC_TAC_TOE
             Console.WriteLine("  {0}  |  {1}  |  {2}", Arr[7], Arr[8], Arr[9]);
             Console.WriteLine("     |     |      ");
         }
-        //Checking that any player has won or not
         private static int CheckWin()
         {
             #region Horzontal Winning Condtion
