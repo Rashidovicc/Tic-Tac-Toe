@@ -120,7 +120,7 @@ namespace TIC_TAC_TOE
             }
             #endregion
             #region Checking For Draw
-            // If all the cells or values filled with X or O then any player has won the match
+                
             else if (Arr[1] != '1' && Arr[2] != '2' && Arr[3] != '3' && Arr[4] != '4' && Arr[5] != '5' && Arr[6] != '6' && Arr[7] != '7' && Arr[8] != '8' && Arr[9] != '9')
             {
                 return -1;
