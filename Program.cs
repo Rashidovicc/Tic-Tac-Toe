@@ -79,19 +79,16 @@ namespace TIC_TAC_TOE
             {
                 return 1;
             }
-            //Winning Condition For Second Row
             else if (Arr[4] == Arr[5] && Arr[5] == Arr[6])
             {
                 return 1;
             }
-            //Winning Condition For Third Row
             else if (Arr[6] == Arr[7] && Arr[7] == Arr[8])
             {
                 return 1;
             }
             #endregion
             #region vertical Winning Condtion
-            //Winning Condition For First Column
             else if (Arr[1] == Arr[4] && Arr[4] == Arr[7])
             {
                 return 1;
