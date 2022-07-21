@@ -93,12 +93,10 @@ namespace TIC_TAC_TOE
             {
                 return 1;
             }
-            //Winning Condition For Second Column
             else if (Arr[2] == Arr[5] && Arr[5] == Arr[8])
             {
                 return 1;
             }
-            //Winning Condition For Third Column
             else if (Arr[3] == Arr[6] && Arr[6] == Arr[9])
             {
                 return 1;
