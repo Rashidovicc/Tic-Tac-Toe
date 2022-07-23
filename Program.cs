@@ -62,6 +62,7 @@ namespace TIC_TAC_TOE
         
         private static void Board()
         {
+            //view model
             Console.WriteLine("     |     |      ");
             Console.WriteLine("  {0}  |  {1}  |  {2}", Arr[1], Arr[2], Arr[3]);
             Console.WriteLine("_____|_____|_____ ");
